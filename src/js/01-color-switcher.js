@@ -22,6 +22,7 @@ const switcher = {
     refs.btnStart.disabled = false;
     refs.btnStop.disabled = true;
     clearInterval(this.switchId);
+    this.isActive = false;
     this.switchId = undefined;
   },
   getRandomHexColor() {
