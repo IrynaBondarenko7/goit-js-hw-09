@@ -3,6 +3,8 @@ const refs = {
   btnStop: document.querySelector('button[data-stop]'),
 };
 
+refs.btnStop.disabled = true;
+
 const switcher = {
   isActive: false,
   switchId: null,
