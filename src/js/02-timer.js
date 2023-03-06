@@ -47,11 +47,14 @@ const timer = {
     }
 
     this.isActive = true;
-    refs.btnStart.disabled = true;
 
     this.intervalId = setInterval(() => {
       //від дати, що обрав користувач віднімаємо поточний час
       const deltaTime = new Date(refs.inputDate.value) - Date.now();
+
+      refs.btnStart.disabled = true;
+      refs.btnStart.style.color = '';
+      refs.btnStart.style.backgroundColor = '';
 
       if (deltaTime >= 0) {
         const time = convertMs(deltaTime);
