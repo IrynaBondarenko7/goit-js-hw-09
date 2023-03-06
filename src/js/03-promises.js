@@ -44,4 +44,5 @@ function onFormSubmit(evt) {
         );
       });
   }
+  form.reset();
 }
